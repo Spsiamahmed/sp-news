@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>এসপি নিউজ - সর্বশেষ বাংলা সংবাদ project by sp siam ahmed </title>
+<meta name="title" content="Sp New Website Project | Web Development by Sp Siam Ahmed">
+<meta name="description" content="Explore the new website project by Sp Siam Ahmed, a Bangladeshi web developer. Featuring modern design, responsive layout, and SEO-optimized structure.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com/">
+<meta property="og:title" content="Sp New Website Project | Web Development by Sp Siam Ahmed">
+<meta property="og:description" content="Explore the new website project by Sp Siam Ahmed, a Bangladeshi web developer. Featuring modern design, responsive layout, and SEO-optimized structure.">
+<meta property="og:image" content="https://yourwebsite.com/path-to-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://yourwebsite.com/">
+<meta property="twitter:title" content="Sp New Website Project | Web Development by Sp Siam Ahmed">
+<meta property="twitter:description" content="Explore the new website project by Sp Siam Ahmed, a Bangladeshi web developer. Featuring modern design, responsive layout, and SEO-optimized structure.">
+<meta property="twitter:image" content="https://yourwebsite.com/path-to-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="https://yourwebsite.com/sp.png" type="image/png">
+    <meta name="description" content="এসপি নিউজ - নির্ভরযোগ্য বাংলা নিউজ পোর্টাল। খবর, ভিডিও, গ্যালারি এবং আরও অনেক কিছু।">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9b090d">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="https://via.placeholder.com/192x192/9b090d/ffffff?text=SP">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="keywords" content="বাংলা নিউজ, সংবাদ, বাংলাদেশ, খবর, এসপি নিউজ">
+    <meta name="author" content="এসপি নিউজ">
+    <meta property="og:title" content="এসপি নিউজ - সর্বশেষ বাংলা সংবাদ">
+    <meta property="og:description" content="নির্ভরযোগ্য বাংলা নিউজ পোর্টাল। খবর, ভিডিও, গ্যালারি এবং আরও অনেক কিছু।">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/9b090d/ffffff?text=SP+News">
+    <meta property="og:url" content="https://spnews.com">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Header / Navbar - Fixed Position -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo - শুধু এসপি -->
+                <div class="logo">
+                    <a href="index.html" id="home-link">এসপি</a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#" class="nav-link active" data-category="সর্বশেষ">সর্বশেষ</a></li>
+                    <li><a href="#" class="nav-link" data-category="জাতীয়">জাতীয়</a></li>
+                    <li><a href="#" class="nav-link" data-category="আন্তর্জাতিক">আন্তর্জাতিক</a></li>
+                    <li><a href="#" class="nav-link" data-category="বিনোদন">বিনোদন</a></li>
+                    <li><a href="#" class="nav-link" data-category="খেলাধুলা">খেলাধুলা</a></li>
+                    <li><a href="#" class="nav-link" data-category="প্রযুক্তি">প্রযুক্তি</a></li>
+                    <li><a href="#" class="nav-link" data-category="লাইফস্টাইল">লাইফস্টাইল</a></li>
+                    <li><a href="#" class="nav-link" data-category="শিক্ষা">শিক্ষা</a></li>
+                    <li><a href="#" class="nav-link" data-category="ভিডিও">ভিডিও</a></li>
+                    <li><a href="#" class="nav-link" data-category="গ্যালারি">গ্যালারি</a></li>
+                </ul>
+
+                <!-- Right Side Icons -->
+                <div class="nav-right">
+                    <!-- Search Icon -->
+                    <button class="icon-btn" id="search-toggle" aria-label="সার্চ">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <button class="icon-btn" id="darkmode-toggle" aria-label="ডার্ক মোড">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <!-- Font Size Controls (Desktop only) -->
+                    <div class="font-controls desktop-only">
+                        <button class="icon-btn" id="font-decrease" aria-label="ফন্ট সাইজ কমান">অ-</button>
+                        <button class="icon-btn" id="font-increase" aria-label="ফন্ট সাইজ বাড়ান">অ+</button>
+                    </div>
+                    
+                    <!-- Login/Profile -->
+                    <button class="icon-btn" id="login-btn" aria-label="লগইন">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    
+                    <!-- Hamburger Menu (Mobile Only) -->
+                    <button class="hamburger" id="hamburger" aria-label="মেনু">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search Bar (Hidden by default) -->
+            <div class="search-container" id="search-container">
+                <div class="search-wrapper">
+                    <input type="text" id="search-input" placeholder="খুঁজুন..." autocomplete="off">
+                    <button id="search-close" aria-label="বন্ধ করুন">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div id="suggestions-box" class="suggestions"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Category Bar (Scrollable, Fixed below navbar) -->
+        <div class="category-bar" id="categoryBar">
+            <div class="category-container">
+                <button class="cat-item active" data-category="সর্বশেষ">সর্বশেষ</button>
+                <button class="cat-item" data-category="জাতীয়">জাতীয়</button>
+                <button class="cat-item" data-category="আন্তর্জাতিক">আন্তর্জাতিক</button>
+                <button class="cat-item" data-category="বিনোদন">বিনোদন</button>
+                <button class="cat-item" data-category="খেলাধুলা">খেলাধুলা</button>
+                <button class="cat-item" data-category="প্রযুক্তি">প্রযুক্তি</button>
+                <button class="cat-item" data-category="লাইফস্টাইল">লাইফস্টাইল</button>
+                <button class="cat-item" data-category="শিক্ষা">শিক্ষা</button>
+                <button class="cat-item" data-category="স্বাস্থ্য">স্বাস্থ্য</button>
+                <button class="cat-item" data-category="রাজনীতি">রাজনীতি</button>
+                <button class="cat-item" data-category="অপরাধ">অপরাধ</button>
+                <button class="cat-item" data-category="বাণিজ্য">বাণিজ্য</button>
+                <button class="cat-item" data-category="ভিডিও">ভিডিও</button>
+                <button class="cat-item" data-category="গ্যালারি">গ্যালারি</button>
+            </div>
+        </div>
+
+        <!-- Breaking News Ticker (Fixed below category bar) -->
+        <div class="breaking-ticker" id="breakingTicker">
+            <div class="ticker-label">ব্রেকিং:</div>
+            <div class="ticker-content" id="ticker-content"></div>
+        </div>
+    </header>
+
+    <!-- Main Content Area - এই অংশ ঠিক আছে -->
+<main class="main-content" id="main-content">
+    <!-- Dynamic content will be loaded here via JS -->
+</main>
+        <!-- Skeleton Loader will be shown initially -->
+        <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Newsletter Subscription -->
+        <div class="footer-newsletter">
+            <h3>নিউজলেটার সাবস্ক্রাইব করুন</h3>
+            <p>সর্বশেষ সংবাদ পেতে আমাদের নিউজলেটারে সাবস্ক্রাইব করুন</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="আপনার ইমেইল" required>
+                <button type="submit">সাবস্ক্রাইব</button>
+            </form>
+        </div>
+
+        <!-- Footer Links - Multi-layer -->
+        <div class="footer-links">
+            <div class="footer-col">
+                <h4>বিভাগ</h4>
+                <ul>
+                    <li><a href="#" data-category="জাতীয়">জাতীয়</a></li>
+                    <li><a href="#" data-category="আন্তর্জাতিক">আন্তর্জাতিক</a></li>
+                    <li><a href="#" data-category="বিনোদন">বিনোদন</a></li>
+                    <li><a href="#" data-category="খেলাধুলা">খেলাধুলা</a></li>
+                    <li><a href="#" data-category="প্রযুক্তি">প্রযুক্তি</a></li>
+                    <li><a href="#" data-category="লাইফস্টাইল">লাইফস্টাইল</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>অন্যান্য</h4>
+                <ul>
+                    <li><a href="#" data-category="ভিডিও">ভিডিও</a></li>
+                    <li><a href="#" data-category="গ্যালারি">গ্যালারি</a></li>
+                    <li><a href="#">লাইভ টিভি</a></li>
+                    <li><a href="#">পডকাস্ট</a></li>
+                    <li><a href="#">বিশেষ প্রতিবেদন</a></li>
+                    <li><a href="#">ইন্টারভিউ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>সাহায্য</h4>
+                <ul>
+                    <li><a href="#">আমাদের সম্পর্কে</a></li>
+                    <li><a href="#">প্রাইভেসি পলিসি</a></li>
+                    <li><a href="#">টার্মস অফ ইউজ</a></li>
+                    <li><a href="#">যোগাযোগ</a></li>
+                    <li><a href="#">সাইটম্যাপ</a></li>
+                    <li><a href="#">এডভার্টাইজ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social">
+                <h4>অনুসরণ করুন</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <!-- App Download -->
+                <div class="app-download" style="margin-top: 1rem;">
+                    <h4>ডাউনলোড অ্যাপ</h4>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                        <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; ২০২৫ এসপি নিউজ। সর্বস্বত্ব সংরক্ষিত।</p>
+<p> ডেভলপার sp siam ahmed </p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">ডিজাইন ও ডেভেলপমেন্ট: এসপি নিউজ টিম</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-btn" aria-label="উপরে যান">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
